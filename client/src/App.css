@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cairo+Play:wght@800&family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+
+
+/* Track */
+::-webkit-scrollbar {
+  width: .5px;
+  background-color: #fff; /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the scrollbar handle on hover */
+}
+
+/* Track on hover */
+::-webkit-scrollbar-track:hover {
+  background-color: #ccc; /* Color of the scrollbar track on hover */
+}
+
+/* Button (arrows) */
+::-webkit-scrollbar-button {
+  display: none; /* Hide scrollbar buttons (arrows) */
+}
+
+/* Navbar*/
+
+
+.navbar-brand{
+    
+    font-family: 'Cairo Play', sans-serif;
+}
+
+ul li {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+  }
+   
+  ul li:hover {
+    color: #000;
+  }
+  
+ ul li::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF4B91;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  .navigate{
+    font-weight: bold;
+  }
+  ul li:hover::before {
+    transform: scaleX(1);
+  }
+  @media (max-width: 500px) {
+    .navbar-brand{
+      font-size: 20px !important;
+      font-family: 'Cairo Play', sans-serif;
+   
+  }
+  .navbar-toggler-icon{
+    width: .5em;
+   
+  }
+
+  }
+  /*Home*/ 
+.home{
+  margin: 0;padding: 0;border: 0;
+  background: url('./images/Untitled\ design.gif');
+  height: 100vh;
+  background-size: cover;
+}
+.carousel img{
+  width: 60vh;
+  height: max-content;
+  border: 2px solid #FF4B91; 
+}
+.carousel{
+ 
+}
+.social img{
+  width: 8vh;
+}
+.social ul{
+  list-style: none;
+  text-align: center;
+}
+.social ul li:hover {
+  background-color: #FF4B91;
+  border-radius: 300px;
+}
+.about h1{
+  font-family: 'Comfortaa', cursive;
+}
+.carousel img{
+
+}
+
+@media (max-width: 500px) 
+{
+  .carousel img{
+    width: 40vh;
+    text-align: center;
+    margin-bottom: 10vh;
+  }
+  .about{
+    margin-top: 5vh;
+    padding: 10px;
+    text-align: center;
+  }
+  .home{
+    background-size: cover;
+  }
+  .social img{
+    width: 5vh;
+  }
+
+}
+    /*contact*/
+   .contact{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: #fff;
+   }
+   .ccontact{
+    background: url("./images/back3.gif");
+    height: 100vh;
+    background-size: cover;
+   }
+   .container .submit {
+      background-color:rgb(24, 163, 243);
+      border: 1px solid black;
+      border-radius: 12px;
+      text-align: center;
+      width: 100%;
+   }
+
+.contact form{
+  width: 25vw;
+}
+@media (max-width: 500px) {
+  .contact{
+   display: flex;
+   flex-direction:column;
+   text-align: center;
+    background: transparent;
+  }
+   .contact img{
+     width:50vw;
+     margin: auto;
+     margin-bottom: 5vh;
+  }
+ .contact form{
+    width: 90vw;
+  }
+ }
+
+
+/*works*/
+.works .card {
+  height: max-content;
+  border: 1px solid black;
+  margin-top: 0vh;
+ 
+}
+.works .card:hover{
+  border: 2px solid #FF4B91;
+  }
+.works h1{
+  font-family: 'Lemonada', cursive;
+}
+/*Pricing*/
+
+
+.price-container .card{
+  height: 55vh;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.color .one{
+  background-color: #fd4a4a;
+}
+.color .two{
+  background-color: #fff263;
+}
+.color .three{
+  background-color: #9de67b;
+}
+.color .four{
+  background-color: #58ffdb;
+}
+.color .five{
+  background-color: #70b0e4;
+}
+.pricing h1{
+  font-family: 'Lemonada', cursive;
+}
+.price-container .card .nav-link{
+  color: #000;
+  background-color: #f178c3;
+  border-radius: 30px;
+  text-align: center;
+  width: max-content;
+} 
+
+@media (max-width: 500px) {
+  .price-container{
+    flex-direction: column;
+  }
+  .price-container .card{
+    flex-direction: column;
+    height: max-content;
+    margin: 10px;
+  }
+}
+
+/*Order*/
+.order {
+  background-color: #ff81e0;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 10px;
+}
+.order .btn{
+  background-color: #410632;
+  border: #000;
+}
+.order input[type=number]::-webkit-inner-spin-button, 
+.order input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
