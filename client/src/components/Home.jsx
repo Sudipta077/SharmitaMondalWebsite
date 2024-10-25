@@ -8,7 +8,7 @@ import Navbar from "./Navbar";
 import fb from '../images/facebook.png';
 import instagram from '../images/instagram.png';
 import mail from '../images/mail.png';
-
+import { Typewriter } from 'react-simple-typewriter'
 const Home = () => {
   document.title = "Sharmita Mondal | Home";
   return (
@@ -35,8 +35,22 @@ const Home = () => {
   </div>
 </div>
             </div>
-            <h1 className=" text-center mt-2">Hello,</h1>
-            <p className="col-lg-8 col-sm-12 m-auto">I'm Sharmita Mondal, an artist who channels my emotions into my artwork. I also take on commission work, so if you're looking for custom art, feel free to reach out to me. I'm here to bring your creative visions to life.</p>
+            <h1 className=" text-center mt-3">Hello, I am 
+
+            <Typewriter
+            words={[' Sharmita', ' an artist']}
+            loop={100}
+            cursor
+            cursorStyle='|'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={2000}
+            cursorColor="red"
+         
+          />
+
+            </h1>
+            <p className="col-lg-8 col-sm-12 m-auto">who channels my emotions into my artwork. I also take on commission work, so if you're looking for custom art, feel free to reach out to me. I'm here to bring your creative visions to life.</p>
     
       <div className="social container ">
             <ul className="d-flex m-4  justify-content-evenly">
